@@ -3,26 +3,32 @@ project:
   title: ORMIR Code Guidelines
   toc:
     - file: index.md
-    - file: getting_started.md
+    - file: project.md
+      title: 📂 Computational projects
+    - file: python.md
+      title: 🐍 Coding in Python
+    - file: jupyter.md
+      title: 📔 Jupyter Notebook
+    - file: docs.md
+      title: 📚 Documentation
       children:
-      - file: project.md
-      - file: python.md
-      - file: docs.md
-        children:
-        - file: docs_code.md
-        - file: docs_sites.md 
-        - file: docs_contributing.md
-      - file: jupyter.md
-    - file: going_further.md
+      - file: docs_code.md
+      - file: docs_sites.md 
+      - file: docs_contributing.md
+        title: 💻 Contributing to the ORMIR documentation
+    - file: package_license.md
+      title: 📦 Packaging and licenses
+    - file: gh.md
+      title: 🐙 GitHub
       children: 
-      - file: package_license.md
-      - file: github.md
-        children: 
-        - file: gh_contributing.md
-      - file: publishing.md
-    - file: deep_dive.md
-      children:
+      - file: gh_readme.md
       - file: code_review.md
+      - file: gh_contributing.md
+        title: 💻 Contributing to an ORMIR project
+    - file: publishing.md
+      title: 🌍 Publishing
+    
+        
 site:
   options:
     logo: figures/logo.png

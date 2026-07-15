@@ -8,7 +8,7 @@ Here you will find a step-by-step guide designed to make contributing as straigh
 If you are unsure about any part of the process, are looking for something to contribute, or simply have a question, don't hesitate to contact the project coordinators or email us at ormircommunity@gmail.com. 
 
 :::{hint} Why follow this workflow?
-At first, this workflow may seem more involved than simply editing a document. However, following it ensures that **your contributions are properly tracked and attributed** through GitHub, making **your work visible to the community** while **helping maintainers review, discuss, and integrate your changes efficiently**. 
+At first, this workflow may seem more involved than simply editing a document. However, following it ensures that **YOUR CONTRIBUTIONS ARE PROPERLY TRACKED AND ATTRIBUTED** through GitHub, making **your work visible to the community** while **helping maintainers review, discuss, and integrate your changes efficiently**. 
 Like any new workflow, it quickly becomes familiar and each contribution gets faster and easier!
 :::
 
