@@ -13,6 +13,11 @@ If you are an **experienced contributor**, you may also be interested in some of
 [How often should I commit?](#n_commits). 
 Also, if you think that your contribution requires a different workflow, please [contact the project coordinators](https://www.ormir.org/groups.html).
 
+:::{hint} Why follow this workflow?
+At first, this workflow may seem more involved than simply adding code to a repository. However, following it ensures that **YOUR CONTRIBUTIONS ARE PROPERLY TRACKED AND ATTRIBUTED** through GitHub, making **your work visible to the community** while **helping maintainers review, discuss, and integrate your changes efficiently**. 
+Like any new workflow, it quickly becomes familiar and each contribution gets faster and easier!
+:::
+
 ---
 
 (gh-before-start)=

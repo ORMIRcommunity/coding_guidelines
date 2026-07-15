@@ -5,11 +5,13 @@
 
 We are working hard to make this website as a useful reference for the whole ORMIR community!
 
-The majority of the pages are still under construction, but you can already find some completed ones, such as:
-- [Documentation](docs.md)
-  - [Code documentation](docs_code.md)
-  - [Documentation sites](docs_sites.md)
-  - [Contributing to ORMIR documentation](docs_contributing.md)  
+The majority of the pages are still under construction, but you can already find some completed ones.
+
+On this website, you will find:
+- Guidelines 
+- Step-by-step tutorials, marked with the 💻 icon in the table of contents on the left:
+  - [Contributing to ORMIR documentation](docs_contributing.md)
+  - [Contributing to an ORMIR project](gh_contributing.md) 
 
 <!-- ::::{grid} 1 1 2 3
 
