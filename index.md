@@ -1,7 +1,5 @@
 # ORMIR Code Guidelines
 
-test 1
-
 **🚧 Website under construction 🚧**
 
 We are working hard to make this website as a useful reference for the whole ORMIR community!
