@@ -1,6 +1,6 @@
 version: 1
 project:
-  title: ORMIR Code Guidelines
+  title: ORMIR Coding Guidelines
   toc:
     - file: index.md
     - file: project.md

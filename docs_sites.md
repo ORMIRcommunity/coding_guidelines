@@ -12,7 +12,7 @@ Several frameworks are available for building documentation websites. Among the 
 [Jupyter Book](https://jupyterbook.org/) is the documentation framework most commonly used within the ORMIR community. 
 It is built on [MyST Markdown](https://mystmd.org/). 
 You can find comprehensive guidelines on the [Jupyter Book](https://jupyterbook.org/stable) website. 
-We use Jupyter Book both for writing community documentation, such as these [Code Guidelines]() and the [Data Sharing Guidelines](https://www.ormir.org/data_sharing_guidelines/), and for publishing the documentation of some Python packages, such as [ORMIR-MIDS](https://ormir-mids.github.io/) and [ORMIR-XCT](https://ormir-xct.github.io/).
+We use Jupyter Book both for writing community documentation, such as these [Coding Guidelines](https://www.ormir.org/coding_guidelines/) and the [Data Sharing Guidelines](https://www.ormir.org/data_sharing_guidelines/), and for publishing the documentation of some Python packages, such as [ORMIR-MIDS](https://ormir-mids.github.io/) and [ORMIR-XCT](https://ormir-xct.github.io/).
 
 
 <!-- In a nutshell:

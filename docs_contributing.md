@@ -1,6 +1,6 @@
 # Contributing to the ORMIR documentation
 
-In the ORMIR community, we create and support community documentation, such as the [ORMIR Code Guidelines]() that you are reading or the [ORMIR Data Sharing Guidelines](https://www.ormir.org/data_sharing_guidelines/), as well as documentation of Python packages like [ORMIR-MIDS](https://ormir-mids.github.io/) and [ORMIR-XCT](https://ormir-xct.github.io/).
+In the ORMIR community, we create and support community documentation, such as the [ORMIR Coding Guidelines]() that you are reading or the [ORMIR Data Sharing Guidelines](https://www.ormir.org/data_sharing_guidelines/), as well as documentation of Python packages like [ORMIR-MIDS](https://ormir-mids.github.io/) and [ORMIR-XCT](https://ormir-xct.github.io/).
 All our documentation websites are built using [Jupyter Book](https://jupyterbook.org/) and managed through [GitHub](https://github.com/).
 
 Did you spot a typo, find outdated information, or notice something missing in the ORMIR documentation? 
@@ -55,7 +55,7 @@ These are the current ORMIR documentation projects and their GitHub repositories
 
 | Project                       | GitHub repository                                         |
 |:----------------------------- |:--------------------------------------------------------- |
-| ORMIR Code Guidelines         | https://github.com/ORMIRcommunity/code_guidelines         |
+| ORMIR Coding Guidelines         | https://github.com/ORMIRcommunity/coding_guidelines         |
 | ORMIR Data Sharing Guidelines | https://github.com/ORMIRcommunity/data_sharing_guidelines |
 | ORMIR-MIDS                    | https://github.com/ormir-mids/ormir-mids.github.io        |
 | ORMIR-XCT                     | https://github.com/ORMIR-XCT/ormir-xct.github.io          |

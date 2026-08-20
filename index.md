@@ -1,4 +1,4 @@
-# ORMIR Code Guidelines
+# ORMIR Coding Guidelines
 
 *🚧 Website under construction 🚧*
 
