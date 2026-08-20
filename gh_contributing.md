@@ -487,11 +487,9 @@ more open, reproducible, and accessible for everyone.
 The workflow above covers the basics of contributing via GitHub. 
 As you get more familiar with the process, you may come across a few different situations. So, what if...? 
 
-(merge)=
+
 :::{seealso} ... the original project has changed before my pull request? 
-
-(n_commits)=
-
+:class:dropdown
 - It can happen that you are ready to open your pull request, but the project has changed since your last sync.
 In this case, you can update your branch with the latest changes by following these steps:
 
@@ -550,7 +548,8 @@ In this case, you can update your branch with the latest changes by following th
 
 :::
 
-(resolve-conflict)=
+
+
 :::{seealso} ... I need to resolve a conflict? 
 :class:dropdown
 *A **conflict** happens when Git cannot automatically combine changes from two branches because they **modify the same part of a file** in different ways.*
