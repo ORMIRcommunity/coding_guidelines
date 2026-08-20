@@ -457,7 +457,11 @@ When you are ready to **contribute again**, remember to [sync your fork](#sync) 
 Then, simply follow the same workflow:
 [create a new branch](#branch), [make your changes](#change), [commit](#commit), [push](#push), [open a pull request](#pr), and [collaborate with the maintainer](#collab)!
 
+---
 
+## What if...
+
+*Coming soon!*
 
 <!-- Thank you card -->
 <div style="
