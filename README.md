@@ -1,1 +1,1 @@
-# code guidelines
+# Coding guidelines
