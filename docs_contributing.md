@@ -8,7 +8,7 @@ Here you will find a step-by-step guide designed to make contributing as straigh
 If you are unsure about any part of the process, are looking for something to contribute, or simply have a question, don't hesitate to contact the project coordinators or email us at ormircommunity@gmail.com. 
 
 :::{hint} Why follow this workflow?
-At first, this workflow may seem more involved than simply editing a document. However, following it ensures that **YOUR CONTRIBUTIONS ARE PROPERLY TRACKED AND ATTRIBUTED** through GitHub, making **your work visible to the community** while **helping maintainers review, discuss, and integrate your changes efficiently**. 
+At first, this workflow may seem more involved than simply editing a document. However, following it ensures that **YOUR CONTRIBUTIONS ARE PROPERLY ATTRIBUTED** through GitHub, making **your work visible to the community** while **helping maintainers review, discuss, and integrate your changes efficiently**. 
 Like any new workflow, it quickly becomes familiar and each contribution gets faster and easier!
 :::
 
@@ -23,9 +23,9 @@ Contributing to the ORMIR documentation involves three steps:
 flowchart LR
     direction LR
     
-    clone[1.Setting up<br>the website locally]
-    installJB[2.Making <br>your changes]
-    contribute[3.Submitting your<br>changes for review]
+    clone(1.Setting up<br>the website locally)
+    installJB(2.Making <br>your changes)
+    contribute(3.Submitting your<br>changes for review)
 
     clone --> installJB --> contribute
 
@@ -107,7 +107,7 @@ An ORMIR documentation repository contains at least the following files:
 - `myst.yml`: the main configuration file for the documentation website. It defines the structure of the website, including the table of contents (ToC), which determines the hierarchy and order of the pages, as well as project metadata and build settings. If you would like to learn more about this file, see the [Jupyter Book documentation](https://jupyterbook.org/stable/authoring/table-of-contents/).
 - Markdown (`.md`) and/or Jupyter Notebooks (`.ipynb`) files: these contain the content of the documentation. Each file typically corresponds to a page of the website. The homepage is always `index.md`.
 
-#### 2.2 Markdown and MyST markdown
+#### 2.2 Writing in MyST markdown
 ORMIR documentation uses **MyST (Markedly Structured Text)**, an extension of **Markdown** developed for scientific and technical writing.
 In addition to standard Markdown (you can find the syntax rules [here](https://www.markdownguide.org/cheat-sheet/)), MyST adds
 [admonitions](https://mystmd.org/guide/admonitions) (notes, warnings, tips), 
@@ -119,12 +119,18 @@ In addition to standard Markdown (you can find the syntax rules [here](https://w
 and other directives that make it possible to create rich and interactive documentation.
 A complete reference to MyST syntax can be found [here](https://mystmd.org/guide/typography).
 
+
 #### 2.3 Start contributing!
 
 First, create a **branch** (a copy of the project edicated to a specific contribution, topic, or fix). 
 If you are unfamiliar with creating a branch, find instructions [here](#branch).  
 
-Then, open the file(s) you would like to edit (or create a new one) using your preferred editor, such as [JupyterLab](https://jupyterlab.readthedocs.io/en/latest/) or [Visual Studio Code](https://code.visualstudio.com/). As you save your changes, Jupyter Book automatically rebuilds the affected pages.
+Then, open the file(s) you want to edit (or create a new one) using your preferred **editor**, such as [JupyterLab](https://jupyterlab.readthedocs.io/en/latest/) or [Visual Studio Code](https://code.visualstudio.com/), and start writing!
+
+To **preview your changes** in JupyterLab, you can install the [**JupyterLab MyST Extension**](https://github.com/jupyter-book/jupyterlab-myst) with `pip install jupyterlab_myst`.
+After the installation, refresh JupyterLab. 
+Right click the `.md` file and select `Show Markdown Preview`. 
+Alternatively, you can always keep an eye on the **local website** at `https://localhost:3000`, which updates every time you save your files.
 
 ---
 

@@ -9,12 +9,13 @@ If you are a **new contributor**, don't worry! This guide walks you through the 
 
 If you are an **experienced contributor**, you may also be interested in some of the **best practices** we follow, such as: 
 [Why do I need to fork the repository?](#why_fork), 
-[How may branches should I create?](#n_branches), and
-[How often should I commit?](#n_commits). 
+[How may branches should I create?](#n_branches),
+[How often should I commit?](#n_commits),
+and the section [What if...?](#what-if)
 Also, if you think that your contribution requires a different workflow, please [contact the project coordinators](https://www.ormir.org/groups.html).
 
 :::{hint} Why follow this workflow?
-At first, this workflow may seem more involved than simply adding code to a repository. However, following it ensures that **YOUR CONTRIBUTIONS ARE PROPERLY TRACKED AND ATTRIBUTED** through GitHub, making **your work visible to the community** while **helping maintainers review, discuss, and integrate your changes efficiently**. 
+At first, this workflow may seem more involved than simply adding code to a repository. However, following it ensures that **YOUR CONTRIBUTIONS ARE PROPERLY ATTRIBUTED** through GitHub, making **your work visible to the community** while **helping maintainers review, discuss, and integrate your changes efficiently**. 
 Like any new workflow, it quickly becomes familiar and each contribution gets faster and easier!
 :::
 
@@ -41,8 +42,8 @@ The first time you contribute to a project, you need to create a copy of it and 
 ```mermaid
 flowchart LR
     direction LR
-    fork[1.Fork]
-    clone[2.Clone]
+    fork(1.Fork)
+    clone(2.Clone)
 
     fork --> clone
 
@@ -156,11 +157,11 @@ It's finally time to make the changes to the repository! To do so, there are fiv
 ```mermaid
 flowchart LR
 
-    branch[1.Create<br>a branch]
-    changes[2.Make<br>the change]
-    commit[3.Commit<br>the change]
-    push[4.Push<br>the change]
-    pr[5.Send a<br>pull request]
+    branch(1.Create<br>a branch)
+    changes(2.Make<br>the change)
+    commit(3.Commit<br>the change)
+    push(4.Push<br>the change)
+    pr(5.Send a<br>pull request)
 
     branch --> changes
     changes --> commit
@@ -419,16 +420,16 @@ Once the review is complete, the maintainers will **merge your contribution** in
 flowchart LR
 
     subgraph you [Your workflow]
-        branch[1.Create<br>a branch]
-        changes[2.Make<br>the change]
-        commit[3.Commit<br>the change]
-        push[4.Push<br>the change]
-        pr[5.Send a<br>pull request]
+        branch(1.Create<br>a branch)
+        changes(2.Make<br>the change)
+        commit(3.Commit<br>the change)
+        push(4.Push<br>the change)
+        pr(5.Send a<br>pull request)
     end
     
     subgraph maintainer [Maintainer workflow]
-      review[Review your<br>contribution]
-      merge[Merge your<br>contribution]
+      review(Review your<br>contribution)
+      merge(Merge your<br>contribution)
     end
   
     branch --> changes
@@ -459,10 +460,6 @@ Then, simply follow the same workflow:
 
 ---
 
-## What if...
-
-*Coming soon!*
-
 <!-- Thank you card -->
 <div style="
 width:100%;
@@ -480,4 +477,104 @@ Your contribution helps make musculoskeletal imaging research
 more open, reproducible, and accessible for everyone.
 
 </div>
+
+
+---
+
+(what-if)=
+## What if...?
+
+The workflow above covers the basics of contributing via GitHub. 
+As you get more familiar with the process, you may come across a few different situations. So, what if...? 
+
+(merge)=
+:::{seealso} ... the original project has changed before my pull request? 
+
+(n_commits)=
+
+- It can happen that you are ready to open your pull request, but the project has changed since your last sync.
+In this case, you can update your branch with the latest changes by following these steps:
+
+    ::::{tab-set}
+    :::{tab-item} GitHub Desktop
+    :sync: tab1
+    
+    - Make sure you are on the branch you want to update/ In the top bar, go to `Current branch` and select your branch (if it is not already selected):
+    ```{figure} figures/gh_merge1.png
+    :label: gh_merge1
+    :alt: gh_merge1
+    :width: 50%
+    :align: center
+    :figclass: with-border
+    ```
+    - [Commit](#commit) your changes
+    - In the menu bar, go to `Branch`, and then `Update from upstream/main` to bring the latest changes from the original project into your branch
+    ```{figure} figures/gh_merge2.png
+    :label: gh_merge2
+    :alt: gh_merge2
+    :width: 45%
+    :align: center
+    :figclass: with-border
+    ```
+    - Check the list of new and changed files in the left panel
+    - [**Resolve conflicts**](#resolve-conflict), if any! 
+    :::
+    
+    :::{tab-item} Git
+    :sync: tab2
+  
+    
+    ```bash
+    # 1. Make sure you're on the current branch
+    git switch my-current-branch
+    
+    # 2. Commit your changes
+    git add .
+    git commit -m "Describe your changes"
+    
+    # 3. Get the latest changes from the original repository
+    git fetch upstream
+    
+    # 4. Merge upstream/main into your current branch
+    git merge upstream/main
+    
+    # 5. If there are conflicts, resolve them manually,
+    #    then mark them as resolved:
+    git add .
+    
+    # Complete the merge
+    git commit
+    ```
+    :::
+    ::::
+
+:::
+
+(resolve-conflict)=
+:::{seealso} ... I need to resolve a conflict? 
+:class:dropdown
+*A **conflict** happens when Git cannot automatically combine changes from two branches because they **modify the same part of a file** in different ways.*
+
+A conflict can happen in various situation, including after a merge.
+
+Here is an example: 
+```
+<<<<<<< HEAD
+These are ORMIR guidelines
+=======
+These are guidelines
+>>>>>>> upstream/main
+```
+where:
+- `<<<<<<< HEAD` is the **start of your version** (what is in your branch)
+- `These are ORMIR guidelines` is **your content** (in your branch)
+- `=======`	is the **divider** between the two versions  
+- `These are guidelines` is the **upstream content** (what is in the original repository)  
+- `>>>>>>> upstream/main` is the **end of the upstream version**  
+ 
+To **resolve a conflict**, simply open the file in an editor and **manually choose which changes to keep** (or combine them), then remove the conflict markers (that is, `<<<<<<< HEAD`, `=======`, and `>>>>>>> upstream/main`.
+
+:::
+
+
 
